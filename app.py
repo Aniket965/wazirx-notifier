@@ -28,7 +28,7 @@ def analyse_market(markets):
         sorted_market = sorted([percentage_change(element) for element in market],key=lambda x: x['percentage_change_buy'],reverse=True)
         # total_change = 0
         for ele in sorted_market:
-            if(ele['percentage_change_buy'] >= 30):
+            if(ele['percentage_change_buy'] >= 10):
                 return "1"
             # total_change += ele['percentage_change_buy'] 
     return "0"
